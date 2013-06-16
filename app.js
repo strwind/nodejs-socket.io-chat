@@ -35,6 +35,8 @@ server.listen(app.get('port'), function(){
 // socket.io
 var io = require('socket.io').listen(server);
 var timeline = [];
+//每隔半小时清理一次历史记录
+setInterval(function(){ timeline = [];}, 1000*60*30);
 var userNames = {};
 
 io.sockets.on('connection', function (socket) {
