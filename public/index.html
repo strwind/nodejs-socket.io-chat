@@ -38,6 +38,10 @@
           width:680px;
           margin:0 auto;
       }
+      .loginBox {
+        width: 320px;
+        margin-left: -160px;
+      }
     </style>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -87,19 +91,18 @@
       </footer>
 
     </div><!-- /container -->
-
-    <div class="modal hide" id="myModal">
+    <div class="modal hide loginBox" id="myModal">
       <div class="modal-header">
         <h3>Welcome</h3>
       </div>
       <div class="modal-body">
         <form id="init" class="form-inline">
-          <label for="initUsername">Username: </label>
+          <label for="initUsername">用户名: </label>
           <input id="initUsername" type="text" />
         </form>
       </div>
       <div class="modal-footer">
-        <a id="confirmUsername" href="#" class="btn btn-primary">Confirm</a>
+        <a id="confirmUsername" href="#" class="btn btn-primary">登录</a>
       </div>
     </div>
 
